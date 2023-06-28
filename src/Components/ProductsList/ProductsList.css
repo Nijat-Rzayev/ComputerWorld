@@ -1,0 +1,335 @@
+.prodductsListInner {
+    display: grid;
+    grid-template-rows: 120px 1fr;
+}
+
+.listTable {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 20px;
+}
+
+.listSectionLast {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.productsListHeader {
+    background-color: rgb(230, 231, 232);
+    padding: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px 1fr;
+}
+
+.filtrSections {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    gap: 35px;
+}
+
+.filtrSections ul {
+    display: flex;
+    gap: 35px;
+}
+
+.CashOrMonthly button {
+    color: #fff;
+    background-color: #6c757d;
+    /* border-color: #6c757d; */
+    cursor: pointer;
+    border: 1.5px solid #6c757d;
+    outline: none;
+    padding: 12px 5px;
+}
+
+.CashOrMonthly {
+    border-radius: 5px;
+}
+
+.CashOrMonthly button:nth-child(1) {
+    background-color: red;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.CashOrMonthly button:nth-child(2) {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+
+.filtrSectionsUl li label {
+    cursor: pointer;
+    position: relative;
+    color: #939393;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.filtrSectionsUl li input {
+    display: none;
+}
+
+.filtrSectionsUl li label::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    transform: translate(120%, -50%);
+}
+
+.filtrSectionsUl li label::before {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: "";
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    border-radius: 100%;
+    background-color: #C67665;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(149%, -50%);
+}
+
+.filtrSectionsUl>li>input[type="checkbox"]:checked~label::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ListFiltrCount button {
+    border: none;
+    background-color: transparent;
+    color: #939393;
+    font-size: 13px;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.ListFiltrCount button:hover {
+    color: #cc7474;
+}
+
+.ListFiltrCount {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.productsListBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* grid-column: auto; */
+    gap: 15px;
+}
+
+.productsListItem {
+    cursor: pointer;
+    transition: 0.5s;
+    border-right: 1px solid #EBEBEB;
+}
+
+.productsListItem>.item {
+    border: none;
+}
+
+.productsListItem:hover {
+    box-shadow: 2px 3.5px 24px 0 rgba(18, 16, 11, .31);
+}
+
+.ResFiltrSection {
+    display: none;
+}
+
+/* listSectionFirstInner */
+.listSectionFirstInner {
+    display: grid;
+    grid-template-rows: 50px auto;
+    border: 1px solid #EBEBEB;
+    padding: 10px;
+    height: max-content;
+    gap: 15px;
+}
+
+.buttonfiltr {
+    border: none;
+    background-color: rgb(230, 231, 232);
+    font-size: 15px;
+    font-weight: 700;
+    color: #545353;
+    cursor: pointer;
+    line-height: 1.8;
+}
+
+.buttonfiltr input {
+    display: none
+}
+
+.buttonfiltr label {
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.buttonfiltr label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    transform: translate(100%, -50%);
+}
+
+.buttonfiltr label::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "";
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    border-radius: 100%;
+    background-color: #C67665;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    transform: translate(165%, -50%) scale(1.2);
+}
+
+.buttonfiltr input[type="checkbox"]:checked~label::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(165%, -50%) scale(1);
+
+}
+
+/* listSectionFirstInnerEnd */
+
+
+/* subMenuFiltr */
+
+.subMenuFiltr div {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subMenuFiltr div input {
+    display: none
+}
+
+.subMenuFiltr div label {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #545353;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.subMenuFiltr div label::after {
+    position: absolute;
+    border: 1px solid #000;
+    left: 0;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    background-color: white;
+    transform: translate(-200%, -50%);
+}
+
+.subMenuFiltr div label::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "";
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    border-radius: 100%;
+    background-color: #C67665;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    transform: translate(-285%, -50%) scale(1.2);
+}
+
+.subMenuFiltr div input[type="checkbox"]:checked~label::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-285%, -50%) scale(1);
+
+}
+
+.Apply {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translate(100%, -50%);
+    margin-top: 50px;
+    background: rgb(255, 0, 60);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    padding: 10px 8px;
+}
+
+.TableFiltrBtn {
+    display: block;
+}
+
+/* subMenuFiltr End */
+@media screen and (max-width:1024px) {
+    .listSectionFirst {
+        display: none;
+    }
+
+    .listTable {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .ResFiltrSection {
+        display: block;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: end;
+        gap: 10px;
+    }
+
+    .ResFiltrSection button {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 8px;
+        outline: none;
+        border: none;
+        white-space: nowrap;
+        min-width: 120px;
+        cursor: pointer;
+        gap: 10px;
+    }
+
+    .filtrSections {
+        display: none;
+    }
+}

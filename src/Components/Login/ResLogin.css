@@ -1,0 +1,43 @@
+@media screen and (max-width: 960px) {
+    .LoginInner form {
+        width: 100%;
+    }
+
+    .RegisterBlock {
+        width: 100%;
+    }
+
+    .Name_Surname input,
+    .password_mobile input {
+        width: 100%;
+        margin: 0;
+        margin: 5px 0;
+    }
+
+    .RegisterBlock {
+        min-width: 30%;
+    }
+
+    .dateInner,
+    .genderInner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dateInner div,
+    .genderInner div {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .dateInner ul {
+        width: 40px;
+    }
+
+    .genderInner div label {
+        width: 40px;
+        font-size: smaller;
+    }
+}

@@ -1,0 +1,39 @@
+.MySLider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Slider {
+    white-space: nowrap;
+    grid-auto-flow: column;
+    overflow-x: hidden;
+    width: 100%;
+    height: 87%;
+}
+
+.slide {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    /* width: calc(100%/4); */
+    width: 250px;
+    cursor: pointer;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    font-weight: 800;
+    border: 1px solid #ebebeb;
+}
+
+.slide:first-child {
+    margin-left: 0;
+}
+
+
+.slider.dragging {
+    scroll-behavior: auto;
+}

@@ -1,0 +1,148 @@
+.OneBuyCashInner {
+    height: 400px;
+    background-color: white;
+    padding: 10px;
+    width: 450px;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+
+}
+
+.OneBuyCashInner form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 80px 150px;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    gap: 10px;
+}
+
+.Phone {
+    display: grid;
+    grid-template-rows: 25px 35px;
+    gap: 10px;
+}
+
+.OrderForm {
+    display: grid;
+    gap: 20px;
+}
+
+.Phone>input {
+    border-radius: 18px;
+    background: #dadada;
+    color: gray;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+}
+
+.Phone>input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+
+
+.OrderForm {
+    display: grid;
+    grid-template-rows: 20px auto auto
+}
+
+.orderbutton button {
+    background: #ff003c !important;
+    border: 1px solid #cecece !important;
+    color: #fff;
+    width: 200px;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.orderbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OneBuyCashInner>div:nth-child(1) {
+    display: flex;
+    justify-content: end;
+}
+
+.CloseBtnModal img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.CloseBtnModal {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Label */
+.label:not(.payment) {
+    border-radius: 18px;
+    background: #dadada;
+    color: gray;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+
+}
+
+.radio-item [type=radio] {
+    display: none;
+}
+
+.radio-item label {
+    display: block;
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+    border-radius: 18px;
+    position: relative;
+    white-space: nowrap;
+    padding: 4px 30px;
+    height: 30px;
+}
+
+.radio-item label::after,
+.radio-item label::before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+}
+
+.radio-item label::after {
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    left: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-item label::before {
+    height: 14px;
+    width: 14px;
+    background-color: red;
+    left: 15px;
+    z-index: 5;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out 0s;
+}
+
+.radio-item input[type="radio"]:checked~label::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,57 @@
+.Modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #0101017b;
+    height: 100vh;
+    z-index: 999;
+    margin: 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Modal.active {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+}
+
+.TableFiltr {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.TableFiltr .listSectionFirst {
+    display: block;
+    margin-top: 100px;
+}
+
+.TableFiltr img {
+    width: 35px;
+    height: 35px;
+}
+
+.TableFiltr>button:nth-child(1) {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 25%);
+}
+
+.TableFiltr .listSectionFirstInner {
+    margin-top: 50px;
+}

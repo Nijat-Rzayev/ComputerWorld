@@ -1,0 +1,162 @@
+@media screen and (max-width: 1100px) {
+
+    .RightAdversting,
+    .miniCategories {
+        display: none;
+    }
+
+    .HomeBody,
+    .HomeWrapper {
+        width: 100%;
+    }
+
+    .DeliveryInfo {
+        font-size: 8px;
+    }
+
+    .DeliveryInfo div p strong {
+        font-size: 10px;
+    }
+
+    .HomeTop {
+        height: max-content;
+    }
+
+    .ImgSliderBlock .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .ImgSliderBlock {
+        height: max-content;
+    }
+
+    .HomeWrapper {
+        height: max-content;
+    }
+
+    .advertising {
+        height: max-content;
+    }
+
+    .DeliveryInfo {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .DeliveryInfo div {
+        margin: 0 5px;
+    }
+
+    .DeliveryInfo div img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .asement div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ImgSliderBlock .swiper-button-next::after,
+    .ImgSliderBlock .swiper-button-prev::after {
+        font-size: 25px;
+    }
+
+    .DeliveryInfo {
+        padding: 2em;
+    }
+
+    .asement {
+        display: none
+    }
+
+    .bottomSwiper {
+        display: block;
+        width: 60%;
+        height: 100%;
+        margin: 15px auto;
+    }
+
+    .bottomContainer {
+        padding-bottom: 20px;
+    }
+
+    .bottomHeader p {
+        font-size: 15px;
+        height: 45px;
+        font-weight: bold;
+        text-align: center;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottomImg {
+        margin: 15px 0;
+    }
+
+    .bottomImg img {
+        width: 100%;
+        height: 100%;
+        /* background-position: center center;
+        object-fit: cover; */
+    }
+
+    .bottomHeader .time {
+        margin: 15px 0;
+    }
+
+    .bottomContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 55px;
+    }
+
+    .bottomContent p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .bottomContent p:nth-child(2) {
+        color: red;
+        font-family: jisaznregular;
+    }
+
+    .bottomContent p:nth-child(1) {
+        text-decoration: line-through;
+        font-family: jisaznregular;
+    }
+
+    .bottomContent button {
+        font-size: 10px;
+        background-color: #9c3;
+        border-radius: 4px;
+        padding: 8px;
+        border: none;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        font: sans-serif;
+        transition: .5s;
+        letter-spacing: 0.5px;
+    }
+
+    .bottomContent button:hover {
+        background-color: rgb(128, 184, 17);
+
+    }
+
+    .bottomSwiper .swiper-button-next:after,
+    .bottomSwiper .swiper-button-prev:after {
+        font-size: 30px;
+        color: rgb(159, 153, 153);
+    }
+}

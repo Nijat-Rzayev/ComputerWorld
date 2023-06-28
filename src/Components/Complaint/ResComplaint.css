@@ -1,0 +1,38 @@
+@media screen and (max-width: 1100px) {
+    .TalbeHeader {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .TalbeHeader>div>input {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .TalbeBody input {
+        width: 100%;
+        font-size: 1rem;
+        height: 50px;
+    }
+
+    .TalbeBody {
+        margin-top: 15px;
+    }
+
+    .TableInner {
+        padding: 20px;
+    }
+
+    .TalbeSendComplaint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .BtnSend {
+        padding: 1rem;
+        margin-top: 55px;
+
+    }
+}

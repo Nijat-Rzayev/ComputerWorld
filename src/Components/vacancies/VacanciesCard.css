@@ -1,0 +1,50 @@
+.VacanciesCard {
+    padding: 15px;
+    border: 1px #EBEBEB solid;
+    border-radius: 15px;
+}
+
+.VacanciesCardInner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+.CardLeft {
+    display: grid;
+    gap: 10px;
+}
+
+.CardLeft h3 {
+    font-weight: 600;
+}
+
+.CardLeft p {
+    padding: 10px;
+    background: rgba(246, 134, 31, .07);
+    color: #f6861f !important;
+    border: none;
+    width: max-content;
+}
+
+.MoreBtn {}
+
+.MoreBtn {
+    font-size: 12px;
+    background-color: #9c3;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.MoreBtn:hover {
+    background-color: green;
+}

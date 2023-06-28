@@ -1,0 +1,12 @@
+.partnersBox {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EBEBEB;
+}
+.partnersBox img {
+    width: 150px;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    padding: 15px;
+}

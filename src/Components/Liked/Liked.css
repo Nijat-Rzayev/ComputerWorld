@@ -1,0 +1,210 @@
+.Liked {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 20px;
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.CloseBtnLiked {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-15px, 10px);
+    background-color: transparent;
+}
+
+.CloseBtnLiked img {
+    cursor: pointer;
+}
+
+.infoLiked {
+    display: grid;
+    height: max-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto;
+}
+
+.CardItemContainer {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.cardInner {
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+
+.CardItemContainer h1 {
+    background-color: rgb(85, 85, 85);
+    color: white;
+    padding: 5px;
+
+}
+
+.infoHeader div:nth-child(1) {
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+
+.infoHeader div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 60px auto;
+    align-items: center;
+    background-color: rgb(227, 227, 227);
+}
+
+.infoHeader div:nth-child(1)>h2 {
+    font-size: 18px;
+}
+
+.infoLiked>div:not(:nth-child(1)) {
+    border: 1px solid #EBEBEB;
+}
+
+.infoHeader div:nth-child(2) {
+    padding: 15px;
+}
+
+.myAccount h2 {
+    background-color: rgb(227, 227, 227);
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+.myAccount {
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+
+.myAccount h2 {
+    display: flex;
+    align-items: center;
+}
+
+.MyAccountOptions {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.MyAccountOptions div {
+    border-bottom: 1px solid #EBEBEB;
+    cursor: pointer;
+    padding: 8px;
+
+}
+
+.MyAccountOptions div a {
+    padding-left: 15px;
+    display: block;
+}
+
+.captionCard h1 {
+    background-color: rgb(85, 85, 85);
+}
+
+
+
+
+
+/* cardItem Liked */
+
+.LikedItemImg img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+.cardItem {
+    position: relative;
+    margin-top: 10px;
+    display: grid;
+    padding: 20px;
+    border: 1px solid #EBEBEB;
+    border-radius: 12px;
+    column-gap: 20px;
+    grid-template-rows: repeat(auto-fill, 200px);
+    grid-template-columns: 80px 1fr 4fr 1fr 1fr;
+}
+
+.LikedİtemDetails>ul>li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 2px 0;
+}
+
+.LikedİtemDetails>ul>li>p:nth-child(1) {
+    font-weight: bold;
+}
+
+.LikedİtemDetails>ul>li p:nth-child(2) {
+    text-align: end;
+}
+
+.LikedİtemDetails {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.LikedİtemDetails h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 0 30px;
+    display: block;
+    color: #282828;
+}
+
+.LikedPriceContainer {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+
+
+.İtem {
+    background-color: red;
+    height: max-content;
+    background-color: rgb(227, 227, 227);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+    display: grid;
+}
+
+
+
+.İtem p:nth-child(1) {
+    color: red;
+}
+
+.AddBastemLiked {
+    font-size: 12px;
+    background-color: #9c3;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.ManatMoney {
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+}
+
+.LikedPrice {
+    display: grid;
+    grid-template-columns: 33px 15px;
+    align-items: center;
+}

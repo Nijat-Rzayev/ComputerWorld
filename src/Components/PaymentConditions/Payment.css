@@ -1,0 +1,19 @@
+.Payment {
+    width: 100%;
+    height: 100%;
+}
+
+.PaymentInner {
+    width: 100%;
+    height: 100%;
+}
+
+.PaymentInner h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.PaymentText p {
+    font-size: 1.1rem;
+    line-height: 2.8rem;
+}

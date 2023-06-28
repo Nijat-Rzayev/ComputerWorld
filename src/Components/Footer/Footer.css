@@ -1,0 +1,125 @@
+.Footer {
+    width: 100%;
+    opacity: 0.8;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.FooterInner {
+
+    flex-direction: column;
+}
+
+.Footerheader p {
+    color: inherit;
+}
+
+.Footerheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.Footerheader p {
+    opacity: 0.8;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.FooterBody {
+    width: 100%;
+}
+
+.FooterBody div ul li {
+    text-align: center;
+}
+
+.FotNav ul li {
+    padding: 5px 10px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterandFooter,
+.Footerheader,
+.FooterBody {
+    margin-bottom: 20px;
+}
+
+.FooterandFooter p {
+    margin-top: 15px;
+}
+
+.FooterandFooter ul li {
+    margin: 0 5px;
+}
+
+.FooterandFooter {
+    flex-direction: column;
+}
+
+.subscribe {
+    width: 80%;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.SubscribeBtn:hover {
+    opacity: 1;
+}
+
+.subscribe input {
+    width: 50%;
+    background-image: none;
+    background-color: #fff;
+    border: solid 1px #e1e2e4;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+    font-family: Libre Franklin, sans-serif;
+    color: #000;
+    background-clip: padding-box;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all .3s ease-in-out;
+    height: 3.125rem;
+    padding: 0.75rem 1rem;
+}
+
+.SubscribeBtn {
+    cursor: pointer;
+    font-weight: 500;
+    font-family: Libre Franklin, sans-serif;
+    text-align: center;
+    user-select: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+    padding: 0.9rem 1.1rem;
+    min-width: 100px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    margin-left: 10px;
+}
+
+.subscribe button:hover {
+    opacity: 1;
+}
+
+.FooterRespons {
+    display: none;
+}
+
+.LogoTekno {
+    object-fit: contain;
+    width: 130px;
+    height: 130px;
+    background-position: center;
+}

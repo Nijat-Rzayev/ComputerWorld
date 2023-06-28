@@ -1,0 +1,77 @@
+.Pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagination ul,
+div {
+    margin: 5px 0;
+}
+
+.Pagination li {
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+}
+
+.Pagination li:hover {
+    border-bottom: 1px solid black;
+}
+
+.activePage {
+    border-bottom: 1px solid black;
+}
+
+.PaginationPageCount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PaginationPageCount>div,
+ul {
+    margin: 10px 0;
+}
+
+.IconsPagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.disabled {
+    color: rgba(0, 0, 0, 0.411);
+}
+
+
+.LiPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LiPage li {
+    cursor: pointer;
+    padding: 8px;
+    margin: 0 8px;
+}
+
+@media screen and (max-width: 510px) {
+    .IconsPagination {
+        display: none;
+    }
+
+    .PaginationPageCount {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

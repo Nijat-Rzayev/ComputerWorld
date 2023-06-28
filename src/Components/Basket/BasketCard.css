@@ -1,0 +1,176 @@
+.BasketCard {
+    border: 1px solid #ebebeb;
+    background-color: white;
+}
+
+.basketCardInner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.cardDetails {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 20px 150px 1fr 121px 80px 26px;
+    grid-template-areas: "checkItem cardImg cardName itemCounter cardPrice reycelrBin";
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+.checkItem {
+    grid-area: checkItem;
+}
+
+.cardImg {
+    grid-area: cardImg;
+    display: flex;
+    align-items: start;
+}
+
+.cardName {
+    grid-area: cardName;
+}
+
+
+.itemCounter {
+    grid-area: itemCounter;
+}
+
+.cardPrice {
+    grid-area: cardPrice;
+    font-size: 17px;
+    font-weight: 700;
+    color: #282828;
+}
+
+.cardPrice p:nth-child(2) {
+    color: red;
+    text-decoration: line-through;
+}
+
+.reycelrBin {
+    grid-area: reycelrBin;
+    cursor: pointer;
+}
+
+.reycelrBin button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.reycelrBin,
+.cardPrice,
+.itemCounter {
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-rows: 50px 20px;
+}
+
+.cardName div {
+    margin-top: 15px;
+}
+
+.discountCard {
+    background-color: rgb(227, 227, 227);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: max-content;
+    text-align: center;
+    height: max-content;
+}
+
+
+.cardImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter button:nth-child(1) {
+    margin-right: 10px;
+    padding: 3px;
+}
+
+.counter button:nth-child(3) {
+    margin-left: 10px;
+    color: red;
+    padding: 3px;
+}
+
+.counter button {
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.counter>input {
+    outline: none;
+    width: max-content;
+    width: 45px;
+    border: 2px solid #ebebeb;
+    text-align: center;
+}
+
+.counter input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    user-select: none;
+}
+
+.counter>input:focus {
+    outline: none;
+}
+
+@media screen and (max-width:1341px) {
+    .cardDetails {
+        grid-template-columns: 20px 150px 1fr 75px;
+        grid-template-areas: "checkItem cardImg cardName  reycelrBin"
+            "checkItem cardImg itemCounter  cardPrice";
+        gap: 20px;
+    }
+
+    .itemCounter {
+        grid-area: itemCounter;
+        justify-content: start;
+    }
+
+    .cardPrice {
+        grid-area: cardPrice;
+        justify-content: end;
+    }
+
+    .reycelrBin {
+        grid-area: reycelrBin;
+        justify-content: end;
+    }
+
+    .cardImg img {
+        padding-bottom: 70px;
+    }
+
+    .cardPrice {
+        grid-area: cardPrice;
+        font-size: 15px;
+        font-weight: 700;
+        color: #282828;
+    }
+
+}

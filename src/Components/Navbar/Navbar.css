@@ -1,0 +1,396 @@
+.Navbar {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.NavDesktop {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.NavTop {
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavTop div:nth-child(1) {
+    width: 40%;
+}
+
+.NavTop div:nth-child(2) {
+    width: 20%;
+}
+
+.NavTop div:nth-child(2) ul li a {
+    font-weight: 500;
+    line-height: 3;
+}
+
+.WatchListSection {
+    position: relative;
+}
+
+.LikedValue {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(60%, -5%);
+    font-weight: 600;
+    font-size: 15px;
+    color: red;
+}
+
+.NavTop div:nth-child(2) ul li a img {
+    display: flex;
+    align-items: center;
+}
+
+.NavTop div:nth-child(2) ul li:nth-child(2) img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    padding: 5px;
+    color: black;
+}
+
+.NavTop div ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.NavTop div ul li a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 3;
+    color: #777;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+}
+
+.NavBody {
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: -100px;
+}
+
+.FIxedNav {
+    position: fixed;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99 !important;
+
+}
+
+.NavBody>div:nth-child(1) {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.NavBody>div:nth-child(1) div a span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.NavBody>div:nth-child(1) div a {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 100%;
+}
+
+.NavBody>div:nth-child(1) div a p {
+    margin-left: 5px;
+}
+
+.Teknotikİmage {
+    cursor: pointer;
+    width: 50px;
+    height: 90%;
+    object-fit: contain;
+}
+
+
+
+.Search {
+    width: 30%;
+    height: 50%;
+}
+
+.Search>div:nth-child(1) input,
+.Search>div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+}
+
+.Search>div:nth-child(1) {
+    position: relative;
+}
+
+.SearchIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid #d8d8d8;
+}
+
+.SearchIcon img {
+    width: 20px;
+    height: 18px;
+    margin-left: 8px;
+    margin-top: 7px;
+    opacity: .6;
+}
+
+.MenuIconSvg {
+    width: 45px;
+    height: 45px;
+    vertical-align: center;
+}
+
+.Search>div input {
+    border: 1px solid #d8d8d8;
+    border-radius: 21px;
+    outline: none;
+    text-align: center;
+}
+
+/* Search */
+.Search {
+    position: relative;
+}
+
+.SearchContainer {
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, 0);
+    width: 50vw;
+    height: max-content;
+    max-height: 500px;
+    background-color: #fff;
+    z-index: 99999999999;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 40%);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.SearchContainer.Active {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.NavBody>div:nth-child(3),
+.NavBody>div:nth-child(3) div a {
+    display: flex;
+    align-items: center;
+}
+
+.NavBody>div:nth-child(3)>div a {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.NavBody>div:nth-child(3) div a p {
+    margin-left: 8px;
+}
+
+.Section_Menu {
+    display: flex;
+    align-items: center;
+}
+
+.LoginAndBasket>div:hover .Loginİcon,
+.LoginAndBasket>div:hover .Basketİcon {
+    color: red;
+}
+
+.ResponsNavbar,
+.HamburgerMenu {
+    display: none;
+
+}
+
+.SearchProductsInner {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.SearchSidebar {
+    height: max-content;
+    padding: 10px;
+}
+
+.SearchSidebar h3 {
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.SearchSidebar ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    color: #58585a;
+    display: block;
+    padding: 5px 20px 5px 2px;
+    cursor: default;
+    font-size: 12px;
+}
+
+.SearchSidebar ul {
+    margin-top: 15px;
+}
+
+.SearchSidebar hr {
+    margin-top: 5px;
+    opacity: .6;
+}
+
+.SearchResults {
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+.SearchResImgox img {
+    width: 30px;
+    height: 30px;
+}
+
+.SearchResultsUl>li {
+    min-width: 150px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 40%);
+    margin: 10px;
+    padding-left: 8px;
+    background-color: #ffffff;
+    height: 100px;
+    display: grid;
+    flex-wrap: wrap;
+    transition: .5s;
+}
+
+.SearchResultsUl {
+    overflow: hidden;
+    height: 450px;
+    overflow-y: auto;
+}
+
+.SearchResultsUl>li:hover {
+    transform: scale(1.05);
+}
+
+.SearchResults li {
+    display: flex;
+}
+
+.SearchResults h3 {
+    height: 27px;
+}
+
+.SearchResults hr {
+    opacity: .6;
+}
+
+.SearchResultsUl li {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.SearchResultsUl li a {
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px auto;
+    min-width: max-content;
+}
+
+
+.ProductsSearchImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.DiscountItem {
+    text-decoration: line-through;
+    color: red;
+    opacity: .5;
+}
+
+.ProductsNameSearchBox {
+    display: inline-block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+}
+
+
+.SearchResultsUl {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, 114px);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.SearchDetailsBox {
+    margin-left: 5px;
+    display: block;
+}
+
+.SearchDetailsBox span {
+    display: block;
+}
+
+.MonthlyPayment {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.brandrssInner {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.brandrssInner.active {
+    height: auto;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    max-height: 9999px;
+}
+
+.brandrssInner li {
+    border-bottom: 1px solid #EBEEBE;
+    padding-left: 10px;
+}

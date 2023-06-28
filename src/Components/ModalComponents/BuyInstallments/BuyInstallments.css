@@ -1,0 +1,172 @@
+.BuyInstallments {
+    background-color: white;
+    height: max-content;
+    padding: 15px;
+    position: relative;
+}
+
+.BuyInstallmentsCloseBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+    content: "";
+    cursor: pointer;
+}
+
+.BuyInstallmentsCloseBtn img {
+    width: 35px;
+    height: 35px;
+}
+
+.BuyInstallmentsInner {
+    display: grid;
+    gap: 25px;
+    grid-template-rows: 50px auto auto 50px 50px;
+}
+
+.Calculator {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rangeDetails ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rangeDetails ul li p {
+    font-weight: 700;
+    color: #282828;
+    text-align: center;
+    font-size: 16px;
+}
+
+.rangeDetails ul li h4 {
+    font-weight: 700;
+    color: #282828;
+    text-align: center;
+    font-size: 31px;
+}
+
+.dravTheOrderBtn {
+    display: flex;
+    justify-content: end;
+}
+
+.dravTheOrderBtn button:hover {
+    background-color: #7ea82b;
+    color: #fff;
+}
+
+.dravTheOrderBtn button {
+    font-size: 16px;
+    transition: 0.5s;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.rightArrowImg {
+    width: 55px;
+    height: 55px;
+}
+
+.buyInstallmentsImg {
+    width: 80%;
+    object-fit: contain;
+    height: 80px;
+}
+
+.buyInstallmentsCardInner {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+}
+
+.buyCounter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.range .css-1v5z18m {
+    width: 100%;
+}
+
+/* MyRange */
+.RangeInnerUl {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 50px;
+}
+
+.RangeInnerUl li {
+    padding: 5px;
+    border-radius: 100%;
+    border: 10px solid #e3e3e3;
+    font-size: 18px;
+    color: #bdbdbd;
+    font-weight: 700;
+    height: 65px;
+    cursor: pointer;
+    width: 65px;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.RangeInnerUl li:not(:last-child)::after {
+    content: "";
+    left: 165%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    z-index: 1;
+    width: 40px;
+    background-color: #bdbdbd;
+}
+
+.RangeInnerUl li:hover::before {
+    content: attr(data-period);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #ff003c;
+    height: 90px;
+    width: 90px;
+    border-color: #ff003c;
+    z-index: 2;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.buyInsPrice {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.closeModal {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

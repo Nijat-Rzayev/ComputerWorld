@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: var(--base-font);
+}
+
+/* .BodyBox {
+    max-width: 1300px;
+    position: relative;
+    margin: 0 auto;
+} */
+
+:root {
+    --base-font: 'Space Grotesk', sans-serif;
+}
+
+.df {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BodyBox {
+    min-width: 650px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.Mr {
+    width: 80%;
+    margin: 35px auto;
+}
+
+a {
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a59292;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+/* LikedModal */
+
+/* TableFiltrModal */
+
+/* TableFiltrModal End */

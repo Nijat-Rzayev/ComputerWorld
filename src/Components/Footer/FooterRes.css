@@ -1,0 +1,73 @@
+/* @media only screen and (max-width: 960px) and (min-width: 400px) {} */
+
+@media screen and (max-width: 960px) {
+    .FooterInner {
+        display: none !important;
+    }
+
+    .FooterRespons {
+        display: block;
+    }
+
+    .FooterRespons>a {
+        display: none;
+    }
+
+    .FooterRespons {
+        margin-top: 10px;
+    }
+
+    .FooterBody {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .FotNav ul li a {
+        display: flex;
+    }
+
+    .FotNav {
+        margin: 15px 25px;
+    }
+
+    .FotNav ul {
+        margin-top: 25px;
+    }
+
+    .FotNav span {
+        font-weight: bold;
+    }
+
+    .subscribe input {
+        margin: 0;
+        width: 95%;
+        margin: 10px;
+    }
+
+    .SubscribeBtn {
+        margin: 0;
+        width: 95%;
+        margin: 10px;
+    }
+
+    .subscribe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: none;
+        flex-direction: column;
+    }
+
+    .FooterandFooter {
+        margin-top: 40px;
+        opacity: 0.5;
+    }
+
+    .SubscribeBtn {
+        margin: 0;
+    }
+
+}

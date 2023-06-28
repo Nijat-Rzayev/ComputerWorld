@@ -1,0 +1,96 @@
+@media screen and (max-width: 1024px) {
+    .Liked {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        grid-template-rows: 1fr;
+    }
+
+    .CardItemContainer {
+        grid-row: 1 / 2;
+    }
+
+    .infoLiked {
+        width: 280px;
+        margin: 0 auto;
+
+    }
+
+    .İtem {
+        grid-row-start: 2;
+    }
+
+    .LikedComponent {
+        height: max-content;
+    }
+
+    .cardItem {
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 200px auto;
+        column-gap: 10px;
+    }
+
+    .LikedPriceContainer {
+        grid-row-start: 2;
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: 120px auto;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .LikedItemImg img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 368px) and (max-width: 768px) {
+
+    .LikedİtemDetails h3 {
+        font-size: 12px;
+    }
+
+    .LikedİtemDetails>ul>li>p {
+        font-size: 12px;
+    }
+
+    .LikedItemImg {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .LikedItemImg img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .cardItem {
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 110px auto;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .cardItem {
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 110px auto;
+        column-gap: 10px;
+    }
+
+    .LikedItemImg img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .LikedItemImg {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,467 @@
+.HomeTop {
+    width: 100%;
+    height: 650px;
+}
+
+.HomeContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.miniCategories {
+    width: 20%;
+    border: 1px solid #EBEBEB;
+}
+
+.HomeBody {
+    width: 78%;
+    height: 100%;
+    margin-left: 2%;
+}
+
+.advertising {
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+.asement {
+    width: 100%;
+    height: 25%;
+}
+
+.HomeWrapper {
+    width: 78%;
+    margin-right: 2%;
+}
+
+.RightAdversting {
+    width: 20%;
+    height: 200px;
+    border: 1px solid #EBEBEB;
+
+}
+
+.ImgSliderBlock {
+    width: 100%;
+    border: 1px solid #EBEBEB;
+    cursor: pointer;
+    height: 73%;
+    margin-bottom: 2%;
+}
+
+.DeliveryInfo {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 12px;
+    border: 1px solid #EBEBEB;
+    padding: 20px;
+}
+
+.DeliveryInfo div {
+    text-align: center;
+}
+
+.DeliveryInfo div img {
+    width: 30px;
+    vertical-align: center;
+    height: 30px;
+}
+
+.ImgSliderBlock .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+
+
+.ImgSliderBlock .swiper {
+    height: 100%;
+    width: 100%;
+}
+
+.asement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.asement div {
+    border: 1px solid #EBEBEB;
+    height: 80%;
+    width: 48%;
+}
+
+.asement div>img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    height: 100%;
+    object-position: center center;
+}
+
+.ImgSliderBlock .swiper-button-prev::after,
+.ImgSliderBlock .swiper-button-next::after {
+    color: #e3e3e3;
+}
+
+.RightAdversting {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.RightSwiper {
+    width: 100%;
+    cursor: pointer;
+    height: 79%;
+    margin-top: 11px;
+}
+
+.RightSwiper .mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.RightSwiper .mySwiper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.RightSwiper .swiper-button-prev::after,
+.RightSwiper .swiper-button-next::after {
+    color: #e3e3e3;
+    font-size: 18px;
+}
+
+.Showoffers {
+    width: 100%;
+}
+
+.Showoffers button {
+    background-color: #f0f1f2;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.RightAdverstingTop {
+    width: 100%;
+}
+
+.RightAdverstingTop h1 {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #282828;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.time li {
+    padding: 5px;
+    border-right: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 11px;
+}
+
+
+
+.time li:nth-child(1)::after {
+    content: "saat";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 65%);
+}
+
+.time li:nth-child(2)::after {
+    content: "Dəqiqə";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 65%);
+}
+
+.time li:nth-child(3)::after {
+    content: "Saniyə";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 65%);
+}
+
+
+.bottomHeader .time li:nth-child(1)::after {
+    content: "saat";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 65%);
+}
+
+.bottomHeader .time li:nth-child(2)::after {
+    content: "Dəqiqə";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 65%);
+}
+
+.bottomHeader .time li:nth-child(3)::after {
+    content: "Saniyə";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 65%);
+
+}
+
+.time li:nth-child(3) {
+    border: none;
+}
+
+.categoriesInner {
+    width: 100%;
+    height: 100%;
+}
+
+.categoriesInner>ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 100%;
+}
+
+.categoriesInner>ul>li {
+    width: 100%;
+    color: black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid #e3e3e38b;
+}
+
+.categoriesInner>ul>li>a {
+    display: block;
+    padding: 8px 8px;
+    height: 100%;
+}
+
+.categoriesInner>ul>li:hover {
+    background-color: #EEEFF2;
+}
+
+.SliderDiscount {
+    width: 100%;
+    height: 100%;
+}
+
+.SliderDIscountTop {
+    height: 70%;
+    width: 100%;
+    width: 100%;
+}
+
+.SliderDIscountTop img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.SliderContent button {
+    font-size: 12px;
+    background-color: #9c3;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.SliderContent button:hover {
+    background-color: rgb(128, 184, 17);
+}
+
+.SliderContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.SliderContent p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.SliderContent p:nth-child(2) {
+    color: red;
+    font-family: jisaznregular;
+}
+
+.SliderContent p:nth-child(1) {
+    text-decoration: line-through;
+    font-family: jisaznregular;
+}
+
+.Showoffers button:hover {
+    color: white;
+    background-color: red;
+}
+
+.Showoffers button {
+    transition: 0.5s;
+}
+
+.bottomSwiper {
+    display: none;
+}
+
+/* Cetegories_Menu-open */
+
+.categoriesInner {
+    position: relative;
+}
+
+.menu-open {
+
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    position: absolute;
+    transform-origin: left;
+    transform: scaleX(0);
+    opacity: 0;
+    width: 408%;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    z-index: 2;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+.menu-open.active {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.productsShow {
+    height: 100%;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(auto-fit, 50px);
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    padding: 20px;
+
+}
+
+.productsShow::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.ProductsInnerShow img {
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+
+
+/* body.active {
+    background-color: #abb8c3;
+    z-index: 9999999;
+} */
+
+.HomeAdversting {
+    height: 100%;
+}
+
+.ProductsInnerShow {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    text-align: center;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ProductsInnerShow:hover {
+    transform: scale(1.1);
+}
+
+/* horizontal scrollbar stilleri */
+.productsShow::-webkit-scrollbar {
+    width: 5px;
+}
+
+.productsShow::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.productsShow::-webkit-scrollbar-thumb {
+    background-color: #a59292;
+    border-radius: 10px;
+}
+
+.productsShow::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.HomeAdversting {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 15px;
+    grid-area: 5px;
+}
+
+.HomeAdversting>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #3d3939;
+}

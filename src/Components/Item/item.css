@@ -1,0 +1,344 @@
+.itemContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    grid-template-rows: 1fr auto;
+}
+
+.itemHeader {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px auto;
+}
+
+.itemHeaderContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.itemFeedBack {
+    display: grid;
+    justify-content: end;
+}
+
+.CardİtemDetails {
+    display: grid;
+    gap: 10px;
+    border: 1px solid #EBEBEB;
+    grid-template-columns: 1fr 1fr;
+}
+
+.itemİnformation {
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 1fr 1fr 100px;
+}
+
+.cardItemImg img {
+    width: 450px;
+    object-fit: contain;
+    height: 450px;
+    margin-top: 30px;
+}
+
+.cardItemImg {
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+.itemNameRes {
+    display: none;
+}
+
+.feature {
+    align-items: center;
+}
+
+.feature img {
+    width: 85px;
+    height: 45px;
+}
+
+.itemName h2 {
+    font-size: 20px;
+
+    /* flex-wrap: wrap !important; */
+}
+
+.CalculatorAnswerPrice div {
+    display: grid;
+    grid-template-columns: 55px 20px;
+    align-items: center;
+}
+
+.CalculatorAnswerPrice div p {
+    text-decoration: line-through;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+
+.disCountPrice p:nth-child(1) {
+    text-decoration: line-through solid red;
+    font-size: normal;
+}
+
+.itemPrice p:nth-child(1) {
+    color: red;
+}
+
+.itemCardBtns>button {
+    border-radius: 14px;
+    border: none;
+    transition: 0.2s all;
+    font-weight: 700;
+    outline: none;
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+    padding: 10px;
+    /* min-width: 120px; */
+}
+
+.itemCardBtns>button:nth-child(1) {
+    color: red;
+}
+
+.itemCardBtns>button:hover {
+    background-color: #ff003c;
+    color: #fff;
+}
+
+.itemCardBtns {
+    display: grid;
+    grid-template-columns: 108px 108px 108px;
+    grid-template-rows: 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.itemTitle {
+    display: grid;
+    grid-template-rows: 84px 1fr 116px;
+    gap: 15px;
+}
+
+.itemSucces {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 4fr;
+}
+
+.itemSucces p:nth-child(1) {
+    color: green;
+}
+
+.itemFeedBack {
+    display: flex;
+    align-content: center;
+    justify-content: end;
+
+}
+
+.itemFeedBack>img {
+    width: 40px;
+    height: 40px;
+    transition: 0.5s all;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    border: 1px solid #EBEBEB;
+}
+
+.itemFeedBack>img:nth-child(1) {
+    margin-right: 10px;
+    transform: scale(1);
+}
+
+.itemFeedBack>img:hover {
+    background-color: #ff003c;
+    transform: scale(1.1);
+
+}
+
+.itemPriceTitle {
+    margin: 10px 0;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.itemCalculator {
+    display: grid;
+    grid-template-columns: auto 180px;
+    gap: 30px;
+    align-items: center;
+}
+
+.itemCalculator h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #282828;
+    margin-bottom: 12px;
+}
+
+.birkartImg img {
+    width: 22px;
+    height: 40px;
+}
+
+.birkartImg {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20px 1fr;
+    gap: 5px;
+}
+
+.birkartImg div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.birkartCredit {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.birkartCredit>div {
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+
+.initalPayment>div,
+.monthlyPayment>div {
+    display: flex;
+    justify-content: center;
+}
+
+.BirBank {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    font-size: 15px;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+.tableItem {
+    display: grid;
+    grid-template-rows: 40px 1fr;
+}
+
+.ChangedPageBtns {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    align-items: center;
+    justify-content: end;
+}
+
+.ChangedPageBtns>button {
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+    border: none;
+    border: 1px solid #EBEBEB;
+    border-bottom: none;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.ChangedPageBtns>button:nth-child(2) {
+    border-top-right-radius: 10px;
+}
+
+.Pages {
+    border: 1px solid #EBEBEB;
+}
+
+.ChangedPageBtns>button.active {
+    background-color: white;
+}
+
+/* UserFeedback */
+.UserFeedback {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.UserFeedback>h1 {
+    font-family: montserrat, sans-serif;
+    font-size: 21.5px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    padding-left: 10px;
+    line-height: normal;
+    letter-spacing: .11px;
+    color: #282828;
+}
+
+.UserFeedback>.Talbe {
+    box-shadow: none;
+    border: none;
+}
+
+.UserFeedback>.Talbe>.TableInner {
+    box-shadow: none;
+    border: none;
+    padding: 10px;
+}
+
+.UserFeedback>.Talbe input {
+    background-color: rgb(249, 251, 252);
+}
+
+/* FeatureTable */
+.FeatureTable {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sectionTwo>ul>li:nth-child(odd),
+.sectionOne>ul>li:nth-child(odd) {
+    background-color: rgb(249, 251, 252);
+}
+
+.sectionTwo>ul>li,
+.sectionOne>ul>li {
+    margin: 5px 0;
+    padding: 8px 0;
+}
+
+.sectionTwo>ul>li>p,
+.sectionOne>ul>li>p {
+    padding-left: 10px;
+}
+
+.css-1v5z18m {
+    width: 80%;
+}
+
+.itemCalculator.singleButton {
+    display: none;
+}
+
+
+.CalculatorAccord {
+    display: none;
+}
+.similarProductSlider {
+    margin-top: 60px;
+}
